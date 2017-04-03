@@ -3,23 +3,23 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         Car c = new Car();
 
         c.make = "Chevy";
         c.model = "S-10 Blazer";
-        c.milleage = 122000;
+        c.millage = 122000;
         c.used = false;
         c.color = "green";
-        c.year = 1989;
+        c.year = 2020;
 
         Superhero hero = new Superhero();
 
         hero.age = 31;
-        hero.male = false;
         hero.mask = true;
         hero.partner = true;
         hero.weapon = "Numb Chucks";
+
+        hero.setMale(false);
 
         Candy cc = new Candy();
 
@@ -31,21 +31,25 @@ public class Main {
 
         IceCream ic = new IceCream();
 
-        ic.chocolate = true;
+        ic.setChocolate(true);
         ic.manufacturer = "Bryers";
         ic.name = "Chunky Monkey";
         ic.netweight = 12;
         ic.price = 2.99;
 
-        Restaurants r = new Restaurants();
+        Restaurant r = new Restaurant();
 
         r.address = "1234 Roman Court";
         r.city = "Charlotte";
         r.state = "NC";
         r.zipCode = 28207;
-        r.name = "Blackfinn";
+        r.setName("Test");
+        r.setName("Best Buy Test");
 
         System.out.println(cc.weight);
         System.out.println(ic.chocolate);
-        }
+
+
+
     }
+}
